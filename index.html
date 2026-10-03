@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <!-- Header Part -->
+     <header>
+          <nav class="navbar container">
+            <div class="logo">
+                <a href="#" class="logo-txt">
+                    Cake<span>ry.</span></a>
+            </div>
+
+            <ul class="navlist">
+                <li><a href="#" class="navlinks active">Home</a></li>
+                <li><a href="#" class="navlinks">About</a></li>
+                <li><a href="#" class="navlinks">Menu</a></li>
+                <li><a href="#" class="navlinks">Restaurant</a></li>
+                <li><a href="#" class="navlinks">Order</a></li>
+                <li><a href="#" class="navlinks">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="icons-link">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="#" class="icons-link" id="cart-icon" title="View Cart">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+
+            <div class="hamburger">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+          </nav>
+     </header>
+
+     <!-- Section Part -->
+     <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section container mint-glow">
+            <div class="content">
+                 <div class="watch">
+                    <a href="#" class="icons-link">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                    <h3>Watch video</h3>
+                 </div>
+                <h1>The Perfect Baked Cake Everyday!</h1>
+                <p>Freshly baked melt in mouth soft sugar rush golden brown pure text flavor packed warm & cozy</p>
+                 <div class="btn-container">
+                    <button>Read More</button>
+                    <button data-type="bordered-btn" id="hero-order-btn">Order Now</button>
+                 </div>
+            </div>
+
+            <div class="image-container">
+                  <img src="images/cake.png" alt="Cake">
+            </div>
+        </section>
+
+        <!-- Store Section -->
+         <section class="other-section container">
+           <div class="column-container">
+            <h2>Welcome to our store</h2>
+            <p data-type="centered-txt">Freshly baked melt in mouth soft sugar rush golden brown pure text flavor packed warm & cozy pure hygienic</p>
+         
+            <div class="card-container">
+                <div class="card" data-type="category" data-item="Cake" data-price="12.00">
+                    <img src="images/pastery (1).png" alt="Cake">
+                    <h3>Cake</h3>
+                </div>
+                <div class="card" data-type="category" data-item="Sandwich" data-price="8.00">
+                    <img src="images/sandwich.png" alt="Sandwich">
+                    <h3>Sandwich</h3>
+                </div>
+                <div class="card" data-type="category" data-item="Cookie" data-price="5.00">
+                    <img src="images/cookie.png" alt="Cookie">
+                    <h3>Cookie</h3>
+                </div>
+                <div class="card" data-type="category" data-item="Bread" data-price="4.00">
+                    <img src="images/bread.png" alt="Bread">
+                    <h3>Bread</h3>
+                </div>
+            </div>
+          </div>
+         </section>
+
+         <!-- About Section -->
+          <section class="other-section container">
+             <div class="row-container">
+                <div class="image-container">
+                    <img src="images/cupcake.jpg" alt="Cupcake">
+                </div>
+
+                <div class="content">
+                    <h2>About <br>Cakery Bakery</h2>
+                    <p>Indulge in our freshly baked cakes, crafted with premium ingredients. Every slice brings pure joy, sweetness, and unforgettable flavor to your celebrations</p>
+                    <p>Cakery Bakery crafts delicious, freshly baked treats and custom cakes to make every celebration truly special.</p>
+                    <button>Read More</button>
+                </div>
+             </div>
+          </section>
+
+          <!-- Featured Food -->
+          <section class="other-section container">
+            <div class="column-container">
+                <h2>Our Featured Food</h2>
+                <p data-type="centered-txt">Indulge in our freshly baked, melt-in-your-mouth golden treats and rich cakes, crafted to bring pure cozy sweetness to every single bite</p>
+                
+                <div class="card-container">
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/birthday cake.jpg" alt="Birthday cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Birthday cake</h4>
+                            <button class="add-to-cart-btn" data-name="Birthday cake" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/muffins.jpg" alt="Muffins">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Muffins</h4>
+                            <button class="add-to-cart-btn" data-name="Muffins" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/waffles.jpg" alt="Waffles">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Waffles</h4>
+                            <button class="add-to-cart-btn" data-name="Waffles" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/pancake.jpg" alt="Pancake">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Pancake</h4>
+                            <button class="add-to-cart-btn" data-name="Pancake" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/piece cake (1).jpg" alt="Piece cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Piece cake</h4>
+                            <button class="add-to-cart-btn" data-name="Piece cake" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/cookies.jpg" alt="Chocolate Cookies">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Chocolate Cookies</h4>
+                            <button class="add-to-cart-btn" data-name="Chocolate Cookies" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/raspberry cake.jpg" alt="Raspberry cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Raspberry cake</h4>
+                            <button class="add-to-cart-btn" data-name="Raspberry cake" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/donut.jpg" alt="Donut">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Donut</h4>
+                            <button class="add-to-cart-btn" data-name="Donut" data-price="15.00" style="margin-top: 10px; padding: 4px 10px; font-size: 0.8rem; background: var(--black-clr); border: none; border-radius: 4px; color: #fff; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+
+         <!-- App Section -->
+         <section class="other-section container">
+            <div class="row-container">
+                <div class="content">
+                    <h2>App Is <br>Soon On App Store</h2>
+                    <p>Our new app is launching soon on the App Store! Download it to order your favorite freshly baked treats anytime, anywhere.</p>
+                    <div class="app-img">
+                        <img src="images/app store.png" alt="App Store">
+                        <img src="images/play store.png" alt="Play Store">
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <img src="images/bakery app.png" alt="Bakery App">
+                </div>
+            </div>
+         </section>
+
+         <!-- Best Food Section -->
+          <section class="other-section container">
+            <div class="row-container">
+                <div class="image-container">
+                    <img src="images/creamy pancake.png" alt="Creamy Pancake">
+                </div>
+                <div class="content">
+                    <h2>Best Selling<br> Food in This Week!</h2>
+                    <div class="rating">
+                        <h4>$15.00</h4>
+                        <img src="images/five star.png" alt="Five Star">
+                    </div>
+                    <p>Celebrate your week with our best-selling cakes, baked fresh with premium ingredients to bring pure joy and sweetness to every single bite</p>
+                    <p>Indulge in our most popular delicious cake, baked perfectly to celebrate your special week</p>
+                    <button id="buy-best-selling" data-name="Creamy Special Pancake" data-price="15.00">Buy Now</button>
+                </div>
+            </div>
+          </section>
+
+          <!-- Newsletter Section -->
+          <section class="other-section container">
+            <div class="column-container">
+                <h2>Subscribe Our Newsletter</h2>
+                <p data-type="balanced-txt">Subscribe to our sweet newsletter today! Get exclusive cake recipes, baking tips, and delicious discounts delivered right to your inbox now.</p>
+                <form class="form-container">
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Email address here">
+                    <input type="submit" value="Subscribe" class="form-btn">
+                </form>
+            </div>
+          </section>
+     </main>
+
+     <!-- Footer Part -->
+     <footer>
+        <div class="column-container container mint-glow">
+            <div class="card-container">
+
+            <div class="column">
+                <div class="logo">
+                    <a href="#" class="logo-txt">
+                    Cake<span>ry.</span></a>
+                </div>
+                <p>Freshly baked daily with love. Savor our delicious, high-quality cakes, pastries, and artisan breads today.</p>
+                 <div class="icons">
+                    <a href="#" class="icons-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icons-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icons-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icons-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                 </div>
+            </div>
+
+            <div class="column">
+                 <h4>Resources</h4>
+                 <ul class="footer-list">
+                    <li><a href="#" class="footer-links">Resources</a></li>
+                    <li><a href="#" class="footer-links">Contact Us</a></li>
+                    <li><a href="#" class="footer-links">FAQ</a></li>
+                    <li><a href="#" class="footer-links">Email support</a></li>
+                    <li><a href="#" class="footer-links">Api Documentation</a></li>
+                 </ul>
+            </div>
+
+            <div class="column">
+                <h4>Menu</h4>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-links">Cupcake</a></li>
+                    <li><a href="#" class="footer-links">Sandwich</a></li>
+                    <li><a href="#" class="footer-links">Cookies</a></li>
+                    <li><a href="#" class="footer-links">Bread</a></li>
+                    <li><a href="#" class="footer-links">Biscuits</a></li>
+                    <li><a href="#" class="footer-links">Raspberry cake</a></li>
+                 </ul>
+            </div>
+
+            <div class="column">
+                <h4>Services</h4>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-links">Home delivery</a></li>
+                    <li><a href="#" class="footer-links">Office delivery</a></li>
+                    <li><a href="#" class="footer-links">Event</a></li>
+                    <li><a href="#" class="footer-links">Birthday</a></li>
+                    <li><a href="#" class="footer-links">Restaurant</a></li>
+                 </ul>
+            </div>
+
+            <div class="column">
+                <h4>Contact</h4>
+                <ul class="footer-list">
+                    <li>
+                        <span class="icons-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <a href="#" class="footer-links">ABC street, India</a>
+                    </li>
+                    <li>
+                        <span class="icons-link">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <a href="#" class="footer-links">+91 9876543210</a>
+                    </li>
+                    <li>
+                        <span class="icons-link">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <a href="#" class="footer-links">bhavishay@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            </div>
+            <div class="line"></div>
+            <h4>
+                &copy; Copyright Cakery All Rights Reserved
+            </h4>
+        </div>
+     </footer>
+
+     <!-- CART & CHECKOUT MODALS (Minimal styling to keep your template clean) -->
+     <div class="cart-modal" id="cart-modal">
+        <div class="modal-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-modal" id="close-cart">&times;</button>
+        </div>
+        <div class="modal-body" id="cart-items-container">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="total-price">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="proceed-checkout-btn">Proceed to Checkout</button>
+        </div>
+     </div>
+
+     <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-header">
+            <h3>Checkout (Cash on Delivery)</h3>
+            <button class="close-modal" id="close-checkout">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="order-form">
+                <div style="margin-bottom: 1rem;">
+                    <label style="display:block; font-size:0.9rem; margin-bottom:0.3rem;">Your Name</label>
+                    <input type="text" id="cust-name" required placeholder="Enter your name" style="width:100%; padding:0.5rem; border:1px solid #c4c4c4; border-radius:4px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display:block; font-size:0.9rem; margin-bottom:0.3rem;">Phone Number</label>
+                    <input type="tel" id="cust-phone" required placeholder="Phone number" style="width:100%; padding:0.5rem; border:1px solid #c4c4c4; border-radius:4px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display:block; font-size:0.9rem; margin-bottom:0.3rem;">Delivery Location (Address)</label>
+                    <textarea id="cust-address" rows="3" required placeholder="Enter delivery address" style="width:100%; padding:0.5rem; border:1px solid #c4c4c4; border-radius:4px;"></textarea>
+                </div>
+                <div style="margin-bottom: 1rem; font-size:0.9rem; color:#e96c28; font-weight:600;">
+                    Payment Mode: Cash on Delivery (COD)
+                </div>
+                <button type="submit" style="width:100%; background:var(--orange-clr); color:#fff; border:none; padding:0.6rem; border-radius:4px; cursor:pointer; font-weight:600;">Confirm Order & Send Email</button>
+            </form>
+        </div>
+     </div>
+
+     <script src="main.js"></script>
+</body>
+</html>
